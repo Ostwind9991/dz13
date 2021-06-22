@@ -19,6 +19,7 @@
     grid-template-rows: 1fr 1fr;
     grid-column: 1 / 9;
     grid-row: 2 / 4;
+    grid-gap: 24px;
     margin: 24px;
     grid-template-areas:
                         "aside1 aside1 aside2 aside2 aside3 aside3 aside5 aside5"
@@ -26,64 +27,53 @@
       &__aside1 {
         grid-area: aside1;
         background-color: #fff;
-        margin-right: 24px;
-        border-radius: 10px;
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.24), 0 0 32px rgba(0, 0, 0, 0.12);
       }
 
       &__aside2 {
         grid-area: aside2;
         background-color: #F0F0F1;
-        border-radius: 10px;
-        margin-right: 24px;
       }
 
       &__aside3 {
         grid-area: aside3;
         background-color: #E1E1E3;
-        margin-right: 24px;
-        border-radius: 10px;
       }
 
       &__aside4 {
         grid-area: aside4;
         background-color: #D8E6FF;
-        margin-right: 24px;
-        margin-top: 24px;
-        border-radius: 10px;
       }
 
       &__aside5 {
         grid-area: aside5;
         background-color: #F0F0F1;
-        border-radius: 10px;
       }
 
       &__aside6 {
         grid-area: aside6;
         display: none;
         background-color: #F0F0F1;
-        border-radius: 10px;
       }
       &__aside7 {
         grid-area: aside7;
         display: none;
         background-color: #F0F0F1;
-        border-radius: 10px;
       }
       &__aside8 {
         grid-area: aside8;
         display: none;
         background-color: #C4DAFF;
-        border-radius: 10px;
       }
       &__aside9 {
         grid-area: aside9;
         display: none;
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.24), 0 0 32px rgba(0, 0, 0, 0.12);
         background-color: #ffffff;
-        border-radius: 10px;
       }
+  }
+  &__wrapper div {
+    border-radius: 10px;
   }
 }
 
@@ -92,47 +82,22 @@
       &__wrapper {
         grid-template-rows:2fr 2fr 1fr;
         margin: 14px;
+        grid-gap: 14px;
         grid-template-areas:
                         "aside1 aside1 aside3 aside3 aside5 aside5 aside7 aside7"
                         "aside2 aside2 aside4 aside4 aside6 aside6 aside8 aside8"
                         "aside9 aside9 aside9 aside9 aside9 aside9 aside9 aside9";
-        &__aside1 {
-          margin-right: 14px;
-        }
-
-        &__aside2 {
-          margin-right: 14px;
-          margin-top: 14px;
-        }
-
-        &__aside3 {
-          margin-right: 14px;
-        }
-
-        &__aside4 {
-          margin-right: 14px;
-          margin-top: 14px;
-        }
-
-        &__aside5 {
-          margin-right: 14px;
-        }
-
         &__aside6 {
           display: block;
-          margin-top: 14px;
-          margin-right: 14px;
         }
         &__aside7 {
           display: block;
         }
         &__aside8 {
           display: block;
-          margin-top: 14px;
         }
         &__aside9 {
           display: block;
-          margin-top: 14px;
         }
       }
     }
@@ -143,6 +108,7 @@
       &__wrapper {
         grid-template-rows: 5fr 5fr 4fr 2fr;
         margin: 16px;
+        grid-gap: 16px;
         grid-template-areas:
                         "aside1 aside1 aside1 aside2 aside2 aside3 aside3 aside3"
                         "aside4 aside4 aside4 aside4 aside4 aside4 aside4 aside4"
@@ -150,41 +116,18 @@
                         "aside9 aside9 aside9 aside9 aside9 aside9 aside9 aside9";
         &__aside1 {
           background-color: #F0F0F1;
-          margin-right: 16px;
         }
-
-        &__aside2 {
-          margin: 0;
-        }
-
-        &__aside3 {
-          margin: 0 0 0 16px;
-        }
-
-        &__aside4 {
-          margin: 16px 0;
-        }
-
-        &__aside5 {
-          margin-right: 12px;
-        }
-
         &__aside6 {
           display: block;
-          margin: 0 8px 0 4px;
         }
         &__aside7 {
           display: block;
-          margin: 0 4px 0 8px;
         }
         &__aside8 {
           display: block;
-          margin-top: 0;
-          margin-left: 12px;
         }
         &__aside9 {
           display: block;
-          margin-top: 16px;
         }
       }
     }
